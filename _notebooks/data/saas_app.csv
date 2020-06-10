@@ -1,0 +1,15 @@
+Cost,Item,Solution
+"150,000",Setup & Data Migration,OOTB
+"160,000",License & Hosting,OOTB
+"60,000",Development,OOTB
+"80,000",Staff,OOTB
+"200,000",Development,Custom
+"120,000",Maintenance,Custom
+"80,000",Development,Custom
+"80,000",Staff,Custom
+"150,000",Full Stack Developer,In-House
+"416,000",Developer,In-House
+"104,000",Developer,In-House
+"390,000",Product Manager,In-House
+"10,000",Materials,In-House
+20000,Hosting,In-House
