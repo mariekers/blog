@@ -17,4 +17,4 @@ A list, because I don't imagine anyone's reading this page anyways.
 9. Organized the [2020 Data Hackathon](https://codeforphilly.org/events/datahack202).
 10. [Likes](https://youtu.be/MK3f5wQzQuI) [music](https://youtu.be/SchVZRkLUKc)[.](https://youtu.be/6WsWXzegqFQ)
 11. Enjoys anything that is free, outside, or active. 
-12. Looks like this: ![]({{ site.baseurl }}/images/marieke_jackson.jpg "Photo: [Claire Carroll](https://twitter.com/clairebcarroll)")
+12. Looks like this: ![]({{ site.baseurl }}/images/marieke_jackson.jpg "Photo: Claire Carroll")
