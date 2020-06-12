@@ -79,12 +79,12 @@ Remember that grant budget you put in your application?  Now you have to stick t
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-309aa1521c2740e887d3f35d35d12e1f"></div>
+<div id="altair-viz-12d32ce175e242aeb4432dcd8f2340d8"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-309aa1521c2740e887d3f35d35d12e1f") {
-      outputDiv = document.getElementById("altair-viz-309aa1521c2740e887d3f35d35d12e1f");
+    if (outputDiv.id !== "altair-viz-12d32ce175e242aeb4432dcd8f2340d8") {
+      outputDiv = document.getElementById("altair-viz-12d32ce175e242aeb4432dcd8f2340d8");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -126,7 +126,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 800, "continuousHeight": 600}}, "data": {"name": "data-9639842df9b0f59516eabceac07ec489"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "Resource", "legend": null}, "tooltip": [{"type": "nominal", "field": "Resource"}, {"type": "quantitative", "field": "Budget"}], "x": {"type": "quantitative", "field": "Budget", "sort": "ascending", "title": "Program Budget Breakdown"}, "y": {"type": "nominal", "axis": {"labels": false, "title": ""}, "field": "Program"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-9639842df9b0f59516eabceac07ec489": [{"Resource": "Program Administrator", "Budget": 95000, "Program": "Program"}, {"Resource": "Data Manager", "Budget": 85000, "Program": "Program"}, {"Resource": "Case Manager", "Budget": 45000, "Program": "Program"}, {"Resource": "Program Specialist", "Budget": 75000, "Program": "Program"}, {"Resource": "Program Coordinator", "Budget": 75000, "Program": "Program"}, {"Resource": "Administrative", "Budget": 20000, "Program": "Program"}, {"Resource": "Direct Services", "Budget": 600000, "Program": "Program"}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 800, "continuousHeight": 600}}, "data": {"name": "data-9639842df9b0f59516eabceac07ec489"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "Resource", "legend": null}, "tooltip": [{"type": "nominal", "field": "Resource"}, {"type": "quantitative", "field": "Budget"}], "x": {"type": "quantitative", "field": "Budget", "title": "Program Budget Breakdown"}, "y": {"type": "nominal", "axis": {"labels": false, "title": ""}, "field": "Program"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-9639842df9b0f59516eabceac07ec489": [{"Resource": "Program Administrator", "Budget": 95000, "Program": "Program"}, {"Resource": "Data Manager", "Budget": 85000, "Program": "Program"}, {"Resource": "Case Manager", "Budget": 45000, "Program": "Program"}, {"Resource": "Program Specialist", "Budget": 75000, "Program": "Program"}, {"Resource": "Program Coordinator", "Budget": 75000, "Program": "Program"}, {"Resource": "Administrative", "Budget": 20000, "Program": "Program"}, {"Resource": "Direct Services", "Budget": 600000, "Program": "Program"}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -154,9 +154,106 @@ Remember that grant budget you put in your application?  Now you have to stick t
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/oes_all_x_tech.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
 <span class="n">jobs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;Percent Tech&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;Technologists&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;total_emp&#39;</span><span class="p">]),</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">jobs</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Industry</th>
+      <th>Technologists</th>
+      <th>total_emp</th>
+      <th>Hourly mean wage</th>
+      <th>annual_salary_tech</th>
+      <th>annual_salary_all</th>
+      <th>Percent Tech</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Agriculture, Forestry, Fishing and Hunting</td>
+      <td>290</td>
+      <td>430720</td>
+      <td>35.38</td>
+      <td>73590</td>
+      <td>33510</td>
+      <td>0.0007</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Mining</td>
+      <td>12630</td>
+      <td>684390</td>
+      <td>53.89</td>
+      <td>112100</td>
+      <td>65860</td>
+      <td>0.0185</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Utilities</td>
+      <td>19480</td>
+      <td>547100</td>
+      <td>45.35</td>
+      <td>94320</td>
+      <td>81550</td>
+      <td>0.0356</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Construction</td>
+      <td>18100</td>
+      <td>7439360</td>
+      <td>36.91</td>
+      <td>76770</td>
+      <td>57110</td>
+      <td>0.0024</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Manufacturing</td>
+      <td>307140</td>
+      <td>12707850</td>
+      <td>49.38</td>
+      <td>102710</td>
+      <td>54260</td>
+      <td>0.0242</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -315,6 +412,99 @@ dtype: object
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">horizontal_stripplot</span> <span class="o">=</span>  <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">jobs</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Percent Tech:Q&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;.0%&#39;</span><span class="p">)</span> <span class="p">),</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;Industry:N&#39;</span><span class="p">),</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Industry&#39;</span><span class="p">,</span> <span class="s1">&#39;Percent Tech&#39;</span><span class="p">]</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_facet</span><span class="p">(</span>
+    <span class="n">spacing</span><span class="o">=</span><span class="mi">0</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_view</span><span class="p">(</span>
+    <span class="n">stroke</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_axis</span><span class="p">(</span>
+    <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+    <span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="n">horizontal_stripplot</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-187db8e8c5714dc4865241ba1ef5a6d1"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-187db8e8c5714dc4865241ba1ef5a6d1") {
+      outputDiv = document.getElementById("altair-viz-187db8e8c5714dc4865241ba1ef5a6d1");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300, "stroke": null}, "axis": {"labelFontSize": 16, "titleFontSize": 16}, "facet": {"spacing": 0}}, "data": {"name": "data-2ae1159158d27eadd7506611ab1e5090"}, "mark": "circle", "encoding": {"color": {"type": "nominal", "field": "Industry"}, "tooltip": [{"type": "nominal", "field": "Industry"}, {"type": "quantitative", "field": "Percent Tech"}], "x": {"type": "quantitative", "axis": {"format": ".0%"}, "field": "Percent Tech"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-2ae1159158d27eadd7506611ab1e5090": [{"Industry": "Agriculture, Forestry, Fishing and Hunting", "Technologists": 290, "total_emp": 430720, "Hourly mean wage": 35.38, "annual_salary_tech": 73590, "annual_salary_all": 33510, "Percent Tech": 0.0007}, {"Industry": "Mining", "Technologists": 12630, "total_emp": 684390, "Hourly mean wage": 53.89, "annual_salary_tech": 112100, "annual_salary_all": 65860, "Percent Tech": 0.0185}, {"Industry": "Utilities", "Technologists": 19480, "total_emp": 547100, "Hourly mean wage": 45.35, "annual_salary_tech": 94320, "annual_salary_all": 81550, "Percent Tech": 0.0356}, {"Industry": "Construction", "Technologists": 18100, "total_emp": 7439360, "Hourly mean wage": 36.91, "annual_salary_tech": 76770, "annual_salary_all": 57110, "Percent Tech": 0.0024}, {"Industry": "Manufacturing", "Technologists": 307140, "total_emp": 12707850, "Hourly mean wage": 49.38, "annual_salary_tech": 102710, "annual_salary_all": 54260, "Percent Tech": 0.0242}, {"Industry": "Wholesale Trade", "Technologists": 173160, "total_emp": 5848510, "Hourly mean wage": 42.04, "annual_salary_tech": 87440, "annual_salary_all": 59110, "Percent Tech": 0.0296}, {"Industry": "Retail Trade", "Technologists": 49940, "total_emp": 15822440, "Hourly mean wage": 38.74, "annual_salary_tech": 80590, "annual_salary_all": 34870, "Percent Tech": 0.0032}, {"Industry": "Transportation and Warehousing", "Technologists": 39560, "total_emp": 6281590, "Hourly mean wage": 38.72, "annual_salary_tech": 80540, "annual_salary_all": 49850, "Percent Tech": 0.0063}, {"Industry": "Information", "Technologists": 588500, "total_emp": 2831080, "Hourly mean wage": 48.99, "annual_salary_tech": 101900, "annual_salary_all": 80050, "Percent Tech": 0.2079}, {"Industry": "Finance and Insurance", "Technologists": 438650, "total_emp": 5972610, "Hourly mean wage": 47.63, "annual_salary_tech": 99070, "annual_salary_all": 75280, "Percent Tech": 0.0734}, {"Industry": "Real Estate and Rental and Leasing", "Technologists": 18110, "total_emp": 2259880, "Hourly mean wage": 40.52, "annual_salary_tech": 84290, "annual_salary_all": 51190, "Percent Tech": 0.008}, {"Industry": "Professional, Scientific, and Technical Services", "Technologists": 1664310, "total_emp": 9379990, "Hourly mean wage": 46.74, "annual_salary_tech": 97230, "annual_salary_all": 85720, "Percent Tech": 0.1774}, {"Industry": "Management of Companies and Enterprises", "Technologists": 289550, "total_emp": 2463870, "Hourly mean wage": 45.01, "annual_salary_tech": 93630, "annual_salary_all": 87280, "Percent Tech": 0.1175}, {"Industry": "Administrative and Support and Waste Management and Remediation Services", "Technologists": 235830, "total_emp": 9372940, "Hourly mean wage": 41.34, "annual_salary_tech": 85990, "annual_salary_all": 42010, "Percent Tech": 0.0252}, {"Industry": "Educational Services", "Technologists": 231480, "total_emp": 13275220, "Hourly mean wage": 33.16, "annual_salary_tech": 68960, "annual_salary_all": 58080, "Percent Tech": 0.0174}, {"Industry": "Health Care and Social Assistance", "Technologists": 146000, "total_emp": 21025440, "Hourly mean wage": 37.14, "annual_salary_tech": 77260, "annual_salary_all": 55300, "Percent Tech": 0.0069}, {"Industry": "Arts, Entertainment, and Recreation", "Technologists": 11310, "total_emp": 2484140, "Hourly mean wage": 34.87, "annual_salary_tech": 72530, "annual_salary_all": 39300, "Percent Tech": 0.0046}, {"Industry": "Accommodation and Food Services", "Technologists": 5160, "total_emp": 14073290, "Hourly mean wage": 30.11, "annual_salary_tech": 62620, "annual_salary_all": 27980, "Percent Tech": 0.0004}, {"Industry": "Other Services (except Federal, State, and Local Government)", "Technologists": 39750, "total_emp": 4249730, "Hourly mean wage": 36.94, "annual_salary_tech": 76830, "annual_salary_all": 44220, "Percent Tech": 0.0094}, {"Industry": "Federal, State, and Local Government", "Technologists": 263930, "total_emp": 9725350, "Hourly mean wage": 41.38, "annual_salary_tech": 86070, "annual_salary_all": 62720, "Percent Tech": 0.0271}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ratios</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">types</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">,</span>
     <span class="n">y</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span>
@@ -336,12 +526,12 @@ dtype: object
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-b1f33da475be42fc96f19db61bf3b4f8"></div>
+<div id="altair-viz-5d682d45adf24429806f651e15a094e6"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b1f33da475be42fc96f19db61bf3b4f8") {
-      outputDiv = document.getElementById("altair-viz-b1f33da475be42fc96f19db61bf3b4f8");
+    if (outputDiv.id !== "altair-viz-5d682d45adf24429806f651e15a094e6") {
+      outputDiv = document.getElementById("altair-viz-5d682d45adf24429806f651e15a094e6");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -424,12 +614,12 @@ dtype: object
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-92d57847700b40d2ae1619693e1a69d9"></div>
+<div id="altair-viz-76ece27862b9453bb98e1e813894a170"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-92d57847700b40d2ae1619693e1a69d9") {
-      outputDiv = document.getElementById("altair-viz-92d57847700b40d2ae1619693e1a69d9");
+    if (outputDiv.id !== "altair-viz-76ece27862b9453bb98e1e813894a170") {
+      outputDiv = document.getElementById("altair-viz-76ece27862b9453bb98e1e813894a170");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -471,7 +661,7 @@ dtype: object
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-934386199c100031191ebd29119d9df8"}, "mark": "bar", "encoding": {"tooltip": [{"type": "quantitative", "field": "total_emp"}], "x": {"type": "quantitative", "axis": {"format": ".0%"}, "field": "PercentOfEmployed"}, "y": {"type": "nominal", "field": "Industry"}}, "transform": [{"joinaggregate": [{"op": "sum", "field": "total_emp", "as": "TotalEmp"}]}, {"calculate": "(datum.total_emp-datum.Technologists)/datum.TotalEmp", "as": "PercentOfEmployed"}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-934386199c100031191ebd29119d9df8": [{"Industry": "Agriculture, Forestry, Fishing and Hunting", "Technologists": 290, "total_emp": 430720, "Hourly mean wage": 35.38, "annual_salary_tech": 73590, "annual_salary_all": 33510, "pct_tech": 0.06732912332838038}, {"Industry": "Mining", "Technologists": 12630, "total_emp": 684390, "Hourly mean wage": 53.89, "annual_salary_tech": 112100, "annual_salary_all": 65860, "pct_tech": 1.8454390040766229}, {"Industry": "Utilities", "Technologists": 19480, "total_emp": 547100, "Hourly mean wage": 45.35, "annual_salary_tech": 94320, "annual_salary_all": 81550, "pct_tech": 3.5605922134893073}, {"Industry": "Construction", "Technologists": 18100, "total_emp": 7439360, "Hourly mean wage": 36.91, "annual_salary_tech": 76770, "annual_salary_all": 57110, "pct_tech": 0.24330049896765313}, {"Industry": "Manufacturing", "Technologists": 307140, "total_emp": 12707850, "Hourly mean wage": 49.38, "annual_salary_tech": 102710, "annual_salary_all": 54260, "pct_tech": 2.4169312668940854}, {"Industry": "Wholesale Trade", "Technologists": 173160, "total_emp": 5848510, "Hourly mean wage": 42.04, "annual_salary_tech": 87440, "annual_salary_all": 59110, "pct_tech": 2.9607541066015104}, {"Industry": "Retail Trade", "Technologists": 49940, "total_emp": 15822440, "Hourly mean wage": 38.74, "annual_salary_tech": 80590, "annual_salary_all": 34870, "pct_tech": 0.3156276781583624}, {"Industry": "Transportation and Warehousing", "Technologists": 39560, "total_emp": 6281590, "Hourly mean wage": 38.72, "annual_salary_tech": 80540, "annual_salary_all": 49850, "pct_tech": 0.6297768558597425}, {"Industry": "Information", "Technologists": 588500, "total_emp": 2831080, "Hourly mean wage": 48.99, "annual_salary_tech": 101900, "annual_salary_all": 80050, "pct_tech": 20.787120109640135}, {"Industry": "Finance and Insurance", "Technologists": 438650, "total_emp": 5972610, "Hourly mean wage": 47.63, "annual_salary_tech": 99070, "annual_salary_all": 75280, "pct_tech": 7.344360338277571}, {"Industry": "Real Estate and Rental and Leasing", "Technologists": 18110, "total_emp": 2259880, "Hourly mean wage": 40.52, "annual_salary_tech": 84290, "annual_salary_all": 51190, "pct_tech": 0.8013699842469512}, {"Industry": "Professional, Scientific, and Technical Services", "Technologists": 1664310, "total_emp": 9379990, "Hourly mean wage": 46.74, "annual_salary_tech": 97230, "annual_salary_all": 85720, "pct_tech": 17.743195888268538}, {"Industry": "Management of Companies and Enterprises", "Technologists": 289550, "total_emp": 2463870, "Hourly mean wage": 45.01, "annual_salary_tech": 93630, "annual_salary_all": 87280, "pct_tech": 11.751837556364581}, {"Industry": "Administrative and Support and Waste Management and Remediation Services", "Technologists": 235830, "total_emp": 9372940, "Hourly mean wage": 41.34, "annual_salary_tech": 85990, "annual_salary_all": 42010, "pct_tech": 2.516072865077553}, {"Industry": "Educational Services", "Technologists": 231480, "total_emp": 13275220, "Hourly mean wage": 33.16, "annual_salary_tech": 68960, "annual_salary_all": 58080, "pct_tech": 1.7436999160842532}, {"Industry": "Health Care and Social Assistance", "Technologists": 146000, "total_emp": 21025440, "Hourly mean wage": 37.14, "annual_salary_tech": 77260, "annual_salary_all": 55300, "pct_tech": 0.694396883014101}, {"Industry": "Arts, Entertainment, and Recreation", "Technologists": 11310, "total_emp": 2484140, "Hourly mean wage": 34.87, "annual_salary_tech": 72530, "annual_salary_all": 39300, "pct_tech": 0.45528834928788237}, {"Industry": "Accommodation and Food Services", "Technologists": 5160, "total_emp": 14073290, "Hourly mean wage": 30.11, "annual_salary_tech": 62620, "annual_salary_all": 27980, "pct_tech": 0.036665200532355974}, {"Industry": "Other Services (except Federal, State, and Local Government)", "Technologists": 39750, "total_emp": 4249730, "Hourly mean wage": 36.94, "annual_salary_tech": 76830, "annual_salary_all": 44220, "pct_tech": 0.9353535401072539}, {"Industry": "Federal, State, and Local Government", "Technologists": 263930, "total_emp": 9725350, "Hourly mean wage": 41.38, "annual_salary_tech": 86070, "annual_salary_all": 62720, "pct_tech": 2.713835491781787}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-efe1548ff87c7ac9c225ff33978cfcca"}, "mark": "bar", "encoding": {"tooltip": [{"type": "quantitative", "field": "total_emp"}], "x": {"type": "quantitative", "axis": {"format": ".0%"}, "field": "PercentOfEmployed"}, "y": {"type": "nominal", "field": "Industry"}}, "transform": [{"joinaggregate": [{"op": "sum", "field": "total_emp", "as": "TotalEmp"}]}, {"calculate": "(datum.total_emp-datum.Technologists)/datum.TotalEmp", "as": "PercentOfEmployed"}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-efe1548ff87c7ac9c225ff33978cfcca": [{"Industry": "Agriculture, Forestry, Fishing and Hunting", "Technologists": 290, "total_emp": 430720, "Hourly mean wage": 35.38, "annual_salary_tech": 73590, "annual_salary_all": 33510}, {"Industry": "Mining", "Technologists": 12630, "total_emp": 684390, "Hourly mean wage": 53.89, "annual_salary_tech": 112100, "annual_salary_all": 65860}, {"Industry": "Utilities", "Technologists": 19480, "total_emp": 547100, "Hourly mean wage": 45.35, "annual_salary_tech": 94320, "annual_salary_all": 81550}, {"Industry": "Construction", "Technologists": 18100, "total_emp": 7439360, "Hourly mean wage": 36.91, "annual_salary_tech": 76770, "annual_salary_all": 57110}, {"Industry": "Manufacturing", "Technologists": 307140, "total_emp": 12707850, "Hourly mean wage": 49.38, "annual_salary_tech": 102710, "annual_salary_all": 54260}, {"Industry": "Wholesale Trade", "Technologists": 173160, "total_emp": 5848510, "Hourly mean wage": 42.04, "annual_salary_tech": 87440, "annual_salary_all": 59110}, {"Industry": "Retail Trade", "Technologists": 49940, "total_emp": 15822440, "Hourly mean wage": 38.74, "annual_salary_tech": 80590, "annual_salary_all": 34870}, {"Industry": "Transportation and Warehousing", "Technologists": 39560, "total_emp": 6281590, "Hourly mean wage": 38.72, "annual_salary_tech": 80540, "annual_salary_all": 49850}, {"Industry": "Information", "Technologists": 588500, "total_emp": 2831080, "Hourly mean wage": 48.99, "annual_salary_tech": 101900, "annual_salary_all": 80050}, {"Industry": "Finance and Insurance", "Technologists": 438650, "total_emp": 5972610, "Hourly mean wage": 47.63, "annual_salary_tech": 99070, "annual_salary_all": 75280}, {"Industry": "Real Estate and Rental and Leasing", "Technologists": 18110, "total_emp": 2259880, "Hourly mean wage": 40.52, "annual_salary_tech": 84290, "annual_salary_all": 51190}, {"Industry": "Professional, Scientific, and Technical Services", "Technologists": 1664310, "total_emp": 9379990, "Hourly mean wage": 46.74, "annual_salary_tech": 97230, "annual_salary_all": 85720}, {"Industry": "Management of Companies and Enterprises", "Technologists": 289550, "total_emp": 2463870, "Hourly mean wage": 45.01, "annual_salary_tech": 93630, "annual_salary_all": 87280}, {"Industry": "Administrative and Support and Waste Management and Remediation Services", "Technologists": 235830, "total_emp": 9372940, "Hourly mean wage": 41.34, "annual_salary_tech": 85990, "annual_salary_all": 42010}, {"Industry": "Educational Services", "Technologists": 231480, "total_emp": 13275220, "Hourly mean wage": 33.16, "annual_salary_tech": 68960, "annual_salary_all": 58080}, {"Industry": "Health Care and Social Assistance", "Technologists": 146000, "total_emp": 21025440, "Hourly mean wage": 37.14, "annual_salary_tech": 77260, "annual_salary_all": 55300}, {"Industry": "Arts, Entertainment, and Recreation", "Technologists": 11310, "total_emp": 2484140, "Hourly mean wage": 34.87, "annual_salary_tech": 72530, "annual_salary_all": 39300}, {"Industry": "Accommodation and Food Services", "Technologists": 5160, "total_emp": 14073290, "Hourly mean wage": 30.11, "annual_salary_tech": 62620, "annual_salary_all": 27980}, {"Industry": "Other Services (except Federal, State, and Local Government)", "Technologists": 39750, "total_emp": 4249730, "Hourly mean wage": 36.94, "annual_salary_tech": 76830, "annual_salary_all": 44220}, {"Industry": "Federal, State, and Local Government", "Technologists": 263930, "total_emp": 9725350, "Hourly mean wage": 41.38, "annual_salary_tech": 86070, "annual_salary_all": 62720}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -483,1526 +673,6 @@ dtype: object
 </div>
     {% endraw %}
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#convert objects</span>
-
-<span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employment_percent&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employment_percent&quot;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">,</span> <span class="n">downcast</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
-<span class="n">jobs</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Employment_percent&#39;</span><span class="p">])</span>
-<span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employment_percent&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employment_percent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-
-<span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employees&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employees&quot;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
-<span class="n">jobs</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Employees&#39;</span><span class="p">])</span>
-<span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employees&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employees&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Industry               object
-Technologists           int64
-total_emp               int64
-Hourly mean wage      float64
-annual_salary_tech      int64
-annual_salary_all       int64
-dtype: object
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">convert_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Industry&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> 
-                <span class="s1">&#39;Technologists&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> 
-                <span class="s1">&#39;total_emp&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> 
-                <span class="s1">&#39;Hourly_mean_wage&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
-                <span class="s1">&#39;annual_salary_all&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-                <span class="s1">&#39;annual_salary_tech&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-               <span class="p">}</span>
-<span class="n">jobs</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">convert_dict</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-11-94df024fde5a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>                 <span class="ansi-blue-fg">&#39;annual_salary_tech&#39;</span><span class="ansi-blue-fg">:</span> int<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span>                }
-<span class="ansi-green-fg">----&gt; 8</span><span class="ansi-red-fg"> </span>jobs <span class="ansi-blue-fg">=</span> jobs<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>convert_dict<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/opt/conda/lib/python3.7/site-packages/pandas/core/generic.py</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors)</span>
-<span class="ansi-green-intense-fg ansi-bold">   5674</span>                 <span class="ansi-green-fg">if</span> col_name <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">in</span> self<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   5675</span>                     raise KeyError(
-<span class="ansi-green-fg">-&gt; 5676</span><span class="ansi-red-fg">                         </span><span class="ansi-blue-fg">&#34;Only a column name can be used for the &#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   5677</span>                         <span class="ansi-blue-fg">&#34;key in a dtype mappings argument.&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   5678</span>                     )
-
-<span class="ansi-red-fg">KeyError</span>: &#39;Only a column name can be used for the key in a dtype mappings argument.&#39;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hierarchy</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Industry&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; -&#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">hierarchy</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;industry_type&#39;</span><span class="p">,</span> <span class="s1">&#39;industry_sub_type&#39;</span><span class="p">]</span>
-<span class="n">jobs</span> <span class="o">=</span> <span class="n">join</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># total employees for each industry and occupation</span>
-<span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;all_industry&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Occupation&#39;</span><span class="p">)[</span><span class="s1">&#39;Employees&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;max&#39;</span><span class="p">)</span>
-<span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;all_occupation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Industry&#39;</span><span class="p">)[</span><span class="s1">&#39;Employees&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;max&#39;</span><span class="p">)</span>
-<span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;all_employed&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;Employees&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-<span class="n">jobs</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Industry</th>
-      <th>Occupation</th>
-      <th>Employees</th>
-      <th>Employment_percent</th>
-      <th>Hourly_mean_wage</th>
-      <th>Annual_mean_wage</th>
-      <th>10_ntile_annual</th>
-      <th>25_ntile_annual</th>
-      <th>50_ntile_annual</th>
-      <th>75_ntile_annual</th>
-      <th>90_ntile_annual</th>
-      <th>all_industry</th>
-      <th>all_occupation</th>
-      <th>all_employed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>All</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>4552880</td>
-      <td>0.4</td>
-      <td>45.08</td>
-      <td>93760</td>
-      <td>45320</td>
-      <td>62850</td>
-      <td>88340</td>
-      <td>119550</td>
-      <td>152010</td>
-      <td>4552880</td>
-      <td>146875480</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Private Industry</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>4107760</td>
-      <td>0.4</td>
-      <td>45.88</td>
-      <td>95430</td>
-      <td>45780</td>
-      <td>63920</td>
-      <td>90120</td>
-      <td>121860</td>
-      <td>154650</td>
-      <td>4552880</td>
-      <td>125009370</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Retail</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>49940</td>
-      <td>7.5</td>
-      <td>38.74</td>
-      <td>80590</td>
-      <td>34020</td>
-      <td>47070</td>
-      <td>71280</td>
-      <td>106610</td>
-      <td>143320</td>
-      <td>4552880</td>
-      <td>15822440</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Information</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>588500</td>
-      <td>1.5</td>
-      <td>48.99</td>
-      <td>101900</td>
-      <td>48070</td>
-      <td>67860</td>
-      <td>97140</td>
-      <td>131900</td>
-      <td>161570</td>
-      <td>4552880</td>
-      <td>2831080</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Finance and Insurance</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>438650</td>
-      <td>1.5</td>
-      <td>47.63</td>
-      <td>99070</td>
-      <td>52050</td>
-      <td>70080</td>
-      <td>95330</td>
-      <td>123130</td>
-      <td>153580</td>
-      <td>4552880</td>
-      <td>5972610</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>133</th>
-      <td>Specialty hospitals - Private</td>
-      <td>Technologists</td>
-      <td>2220</td>
-      <td>5.1</td>
-      <td>41.91</td>
-      <td>87180</td>
-      <td>48220</td>
-      <td>63470</td>
-      <td>84580</td>
-      <td>108310</td>
-      <td>130450</td>
-      <td>4552880</td>
-      <td>232210</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>134</th>
-      <td>Social Assistance</td>
-      <td>Technologists</td>
-      <td>11050</td>
-      <td>3.9</td>
-      <td>28.67</td>
-      <td>59630</td>
-      <td>33040</td>
-      <td>40990</td>
-      <td>54680</td>
-      <td>73200</td>
-      <td>96190</td>
-      <td>4552880</td>
-      <td>3970540</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>135</th>
-      <td>Grantmaking and Giving Services</td>
-      <td>Technologists</td>
-      <td>4610</td>
-      <td>4.3</td>
-      <td>39.68</td>
-      <td>82520</td>
-      <td>43250</td>
-      <td>56010</td>
-      <td>76590</td>
-      <td>102260</td>
-      <td>132030</td>
-      <td>4552880</td>
-      <td>143660</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>136</th>
-      <td>Social Advocacy Organizations</td>
-      <td>Technologists</td>
-      <td>4470</td>
-      <td>5.1</td>
-      <td>36.41</td>
-      <td>75740</td>
-      <td>37110</td>
-      <td>50260</td>
-      <td>68500</td>
-      <td>97040</td>
-      <td>126580</td>
-      <td>4552880</td>
-      <td>222590</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>137</th>
-      <td>Federal, State, and Local Government</td>
-      <td>Technologists</td>
-      <td>263930</td>
-      <td>0.3</td>
-      <td>41.38</td>
-      <td>86070</td>
-      <td>48840</td>
-      <td>64180</td>
-      <td>84270</td>
-      <td>105540</td>
-      <td>126060</td>
-      <td>4552880</td>
-      <td>9725350</td>
-      <td>146875480</td>
-    </tr>
-  </tbody>
-</table>
-<p>136 rows × 14 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hierarchy</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Industry&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; -&#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">hierarchy</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;industry_type&#39;</span><span class="p">,</span> <span class="s1">&#39;industry_sub_type&#39;</span><span class="p">]</span>
-<span class="n">jobs</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">hierarchy</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">jobs</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Industry</th>
-      <th>Occupation</th>
-      <th>Employees</th>
-      <th>Employment_percent</th>
-      <th>Hourly_mean_wage</th>
-      <th>Annual_mean_wage</th>
-      <th>10_ntile_annual</th>
-      <th>25_ntile_annual</th>
-      <th>50_ntile_annual</th>
-      <th>75_ntile_annual</th>
-      <th>90_ntile_annual</th>
-      <th>all_industry</th>
-      <th>all_occupation</th>
-      <th>all_employed</th>
-      <th>industry_type</th>
-      <th>industry_sub_type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>All</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>4552880</td>
-      <td>0.4</td>
-      <td>45.08</td>
-      <td>93760</td>
-      <td>45320</td>
-      <td>62850</td>
-      <td>88340</td>
-      <td>119550</td>
-      <td>152010</td>
-      <td>4552880</td>
-      <td>146875480</td>
-      <td>146875480</td>
-      <td>All</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Private Industry</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>4107760</td>
-      <td>0.4</td>
-      <td>45.88</td>
-      <td>95430</td>
-      <td>45780</td>
-      <td>63920</td>
-      <td>90120</td>
-      <td>121860</td>
-      <td>154650</td>
-      <td>4552880</td>
-      <td>125009370</td>
-      <td>146875480</td>
-      <td>Private Industry</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Retail</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>49940</td>
-      <td>7.5</td>
-      <td>38.74</td>
-      <td>80590</td>
-      <td>34020</td>
-      <td>47070</td>
-      <td>71280</td>
-      <td>106610</td>
-      <td>143320</td>
-      <td>4552880</td>
-      <td>15822440</td>
-      <td>146875480</td>
-      <td>Retail</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Information</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>588500</td>
-      <td>1.5</td>
-      <td>48.99</td>
-      <td>101900</td>
-      <td>48070</td>
-      <td>67860</td>
-      <td>97140</td>
-      <td>131900</td>
-      <td>161570</td>
-      <td>4552880</td>
-      <td>2831080</td>
-      <td>146875480</td>
-      <td>Information</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Finance and Insurance</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>438650</td>
-      <td>1.5</td>
-      <td>47.63</td>
-      <td>99070</td>
-      <td>52050</td>
-      <td>70080</td>
-      <td>95330</td>
-      <td>123130</td>
-      <td>153580</td>
-      <td>4552880</td>
-      <td>5972610</td>
-      <td>146875480</td>
-      <td>Finance and Insurance</td>
-      <td>None</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">indx_jobs</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Occupation&#39;</span><span class="p">)</span>
-
-<span class="n">ttl_employees</span> <span class="o">=</span> <span class="n">indx_jobs</span><span class="p">[</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">Industry</span> <span class="o">==</span> <span class="s2">&quot;All&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">Employees</span>
-<span class="n">ttl_employees</span>
-<span class="c1">#indx_jobs.Employees</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Occupation
-Computer and Mathematical Occupations      4552880
-All                                      146875480
-Database Administrators                     125460
-Developers                                 1754750
-Technologists                              4552880
-Name: Employees, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">indx_jobs</span><span class="o">.</span><span class="n">Employees</span> <span class="o">/</span> <span class="n">ttl_employees</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Occupation
-All              1.000000
-All              0.851125
-All              0.107727
-All              0.019275
-All              0.040664
-                   ...   
-Technologists    0.000488
-Technologists    0.002427
-Technologists    0.001013
-Technologists    0.000982
-Technologists    0.057970
-Name: Employees, Length: 136, dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">siuba</span> <span class="kn">import</span> <span class="n">mutate</span><span class="p">,</span> <span class="n">transmute</span>
-
-
-<span class="p">(</span><span class="n">jobs</span>
-<span class="o">&gt;&gt;</span> <span class="n">group_by</span><span class="p">(</span><span class="n">_</span><span class="o">.</span><span class="n">Occupation</span><span class="p">)</span>
-<span class="o">&gt;&gt;</span> <span class="n">mutate</span><span class="p">(</span><span class="n">pct_emp_job</span> <span class="o">=</span> <span class="n">_</span><span class="o">.</span><span class="n">Employees</span><span class="p">[</span><span class="n">_</span><span class="o">.</span><span class="n">Industry</span> <span class="o">!=</span> <span class="s1">&#39;All&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="n">_</span><span class="o">..</span><span class="n">max</span><span class="p">())</span> 
-<span class="c1">#&gt;&gt; transmute(pct_employed = _.Employees/_.all_industry)</span>
-<span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div><p>(grouped data frame)</p><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Industry</th>
-      <th>Occupation</th>
-      <th>Employees</th>
-      <th>Employment_percent</th>
-      <th>Hourly_mean_wage</th>
-      <th>Annual_mean_wage</th>
-      <th>10_ntile_annual</th>
-      <th>25_ntile_annual</th>
-      <th>50_ntile_annual</th>
-      <th>75_ntile_annual</th>
-      <th>90_ntile_annual</th>
-      <th>total_emp_ind</th>
-      <th>all_industry</th>
-      <th>all_occupation</th>
-      <th>pct_emp_job</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>All</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>4552880</td>
-      <td>0.4</td>
-      <td>45.08</td>
-      <td>93760</td>
-      <td>45320</td>
-      <td>62850</td>
-      <td>88340</td>
-      <td>119550</td>
-      <td>152010</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>146875480</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Private Industry</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>4107760</td>
-      <td>0.4</td>
-      <td>45.88</td>
-      <td>95430</td>
-      <td>45780</td>
-      <td>63920</td>
-      <td>90120</td>
-      <td>121860</td>
-      <td>154650</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>125009370</td>
-      <td>0.902233</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Retail</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>49940</td>
-      <td>7.5</td>
-      <td>38.74</td>
-      <td>80590</td>
-      <td>34020</td>
-      <td>47070</td>
-      <td>71280</td>
-      <td>106610</td>
-      <td>143320</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>15822440</td>
-      <td>0.010969</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Information</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>588500</td>
-      <td>1.5</td>
-      <td>48.99</td>
-      <td>101900</td>
-      <td>48070</td>
-      <td>67860</td>
-      <td>97140</td>
-      <td>131900</td>
-      <td>161570</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>2831080</td>
-      <td>0.129259</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Finance and Insurance</td>
-      <td>Computer and Mathematical Occupations</td>
-      <td>438650</td>
-      <td>1.5</td>
-      <td>47.63</td>
-      <td>99070</td>
-      <td>52050</td>
-      <td>70080</td>
-      <td>95330</td>
-      <td>123130</td>
-      <td>153580</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>5972610</td>
-      <td>0.096346</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>133</th>
-      <td>Specialty hospitals - Private</td>
-      <td>Technologists</td>
-      <td>2220</td>
-      <td>5.1</td>
-      <td>41.91</td>
-      <td>87180</td>
-      <td>48220</td>
-      <td>63470</td>
-      <td>84580</td>
-      <td>108310</td>
-      <td>130450</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>232210</td>
-      <td>0.000488</td>
-    </tr>
-    <tr>
-      <th>134</th>
-      <td>Social Assistance</td>
-      <td>Technologists</td>
-      <td>11050</td>
-      <td>3.9</td>
-      <td>28.67</td>
-      <td>59630</td>
-      <td>33040</td>
-      <td>40990</td>
-      <td>54680</td>
-      <td>73200</td>
-      <td>96190</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>3970540</td>
-      <td>0.002427</td>
-    </tr>
-    <tr>
-      <th>135</th>
-      <td>Grantmaking and Giving Services</td>
-      <td>Technologists</td>
-      <td>4610</td>
-      <td>4.3</td>
-      <td>39.68</td>
-      <td>82520</td>
-      <td>43250</td>
-      <td>56010</td>
-      <td>76590</td>
-      <td>102260</td>
-      <td>132030</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>143660</td>
-      <td>0.001013</td>
-    </tr>
-    <tr>
-      <th>136</th>
-      <td>Social Advocacy Organizations</td>
-      <td>Technologists</td>
-      <td>4470</td>
-      <td>5.1</td>
-      <td>36.41</td>
-      <td>75740</td>
-      <td>37110</td>
-      <td>50260</td>
-      <td>68500</td>
-      <td>97040</td>
-      <td>126580</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>222590</td>
-      <td>0.000982</td>
-    </tr>
-    <tr>
-      <th>137</th>
-      <td>Federal, State, and Local Government</td>
-      <td>Technologists</td>
-      <td>263930</td>
-      <td>0.3</td>
-      <td>41.38</td>
-      <td>86070</td>
-      <td>48840</td>
-      <td>64180</td>
-      <td>84270</td>
-      <td>105540</td>
-      <td>126060</td>
-      <td>NaN</td>
-      <td>4552880</td>
-      <td>9725350</td>
-      <td>0.057970</td>
-    </tr>
-  </tbody>
-</table>
-<p>136 rows × 15 columns</p>
-</div></div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">upper_tiers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Hospitals&#39;</span><span class="p">,</span> <span class="s1">&#39;Real Estate&#39;</span><span class="p">,</span> <span class="s1">&#39;Social Advocacy Organizations&#39;</span><span class="p">,</span> <span class="s1">&#39;Social Assistance&#39;</span><span class="p">,</span> <span class="s1">&#39;Grantmaking and Giving Services&#39;</span><span class="p">,</span> <span class="s1">&#39;Educational Services&#39;</span><span class="p">,</span> <span class="s1">&#39;Finance and Insurance&#39;</span><span class="p">,</span> <span class="s1">&#39;Retail&#39;</span><span class="p">,</span> <span class="s1">&#39;Scientific Research&#39;</span><span class="p">,</span> <span class="s1">&#39;Higher Ed&#39;</span><span class="p">,</span> <span class="s1">&#39;Information&#39;</span><span class="p">,</span> <span class="s1">&#39;Social Assistance&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top_industry</span> <span class="o">=</span> <span class="p">(</span><span class="n">jobs</span> 
-                <span class="o">&gt;&gt;</span><span class="n">group_by</span><span class="p">(</span><span class="n">_</span><span class="o">.</span><span class="n">industry_type</span><span class="p">)</span> 
-                <span class="o">&gt;&gt;</span><span class="n">summarize</span><span class="p">(</span><span class="n">tech_emp</span> <span class="o">=</span> <span class="n">_</span><span class="o">.</span><span class="n">Employees</span><span class="p">[</span><span class="n">_</span><span class="o">.</span><span class="n">Occupation</span> <span class="o">==</span> <span class="s1">&#39;Technologists&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-                <span class="o">&gt;&gt;</span><span class="n">arrange</span><span class="p">(</span><span class="n">_</span><span class="o">.</span><span class="n">tech_emp</span><span class="p">)</span>
-               <span class="p">)</span>
-<span class="n">top_industry</span><span class="p">[</span><span class="n">top_industry</span><span class="p">[</span><span class="s2">&quot;industry_type&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">upper_tiers</span><span class="p">)]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>industry_type</th>
-      <th>tech_emp</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>12</th>
-      <td>Real Estate</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Social Advocacy Organizations</td>
-      <td>4470</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Grantmaking and Giving Services</td>
-      <td>4610</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Social Assistance</td>
-      <td>11050</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Retail</td>
-      <td>49940</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Hospitals</td>
-      <td>83660</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Scientific Research</td>
-      <td>86560</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Higher Ed</td>
-      <td>116770</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Educational Services</td>
-      <td>231480</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Finance and Insurance</td>
-      <td>438650</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Information</td>
-      <td>588500</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_tech</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="s2">&quot;Employees&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-<span class="n">top_industry</span><span class="p">[</span><span class="s2">&quot;t_employed&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">all_tech</span>
-<span class="n">top_industry</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>industry_type</th>
-      <th>tech_emp</th>
-      <th>t_employed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>12</th>
-      <td>Real Estate</td>
-      <td>0</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Psychiatric and Substance Abuse Hospitals</td>
-      <td>1490</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Specialty hospitals</td>
-      <td>3480</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Social Advocacy Organizations</td>
-      <td>4470</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Grantmaking and Giving Services</td>
-      <td>4610</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Social Assistance</td>
-      <td>11050</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Ambulatory Health Services</td>
-      <td>47620</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Retail</td>
-      <td>49940</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>General Medical and Surgical Hospitals</td>
-      <td>78690</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Hospitals</td>
-      <td>83660</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Scientific Research</td>
-      <td>86560</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Higher Ed</td>
-      <td>116770</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Educational Services</td>
-      <td>231480</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Federal, State, and Local Government</td>
-      <td>263930</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Finance and Insurance</td>
-      <td>438650</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Information</td>
-      <td>588500</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Private Industry</td>
-      <td>4107760</td>
-      <td>146875480</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>All</td>
-      <td>4552880</td>
-      <td>146875480</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pvt_employed</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Industry</th>
-      <th>Occupation</th>
-      <th>Employees</th>
-      <th>Employment_percent</th>
-      <th>Hourly_mean_wage</th>
-      <th>Annual_mean_wage</th>
-      <th>10_ntile_annual</th>
-      <th>25_ntile_annual</th>
-      <th>50_ntile_annual</th>
-      <th>75_ntile_annual</th>
-      <th>90_ntile_annual</th>
-      <th>total_emp_ind</th>
-      <th>all_industry</th>
-      <th>all_occupation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>29</th>
-      <td>Private Industry</td>
-      <td>All</td>
-      <td>125009370</td>
-      <td>0.1</td>
-      <td>25.2</td>
-      <td>52410</td>
-      <td>21160</td>
-      <td>26200</td>
-      <td>37970</td>
-      <td>61990</td>
-      <td>100380</td>
-      <td>NaN</td>
-      <td>146875480</td>
-      <td>125009370</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pct_pvt</span> <span class="o">=</span> <span class="p">(</span><span class="n">pvt_employed</span><span class="p">[</span><span class="s2">&quot;Employees&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">t_employed</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
-<span class="n">pct_pub</span> <span class="o">=</span> <span class="p">((</span><span class="n">t_employed</span><span class="o">-</span><span class="n">pvt_employed</span><span class="p">[</span><span class="s2">&quot;Employees&quot;</span><span class="p">])</span><span class="o">/</span><span class="n">t_employed</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
-<span class="n">pct_pub</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>29    14.887516
-Name: Employees, dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">pct_pvt</span><span class="p">,</span> <span class="n">pct_pub</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">{</span><span class="mi">29</span><span class="p">:</span> <span class="mi">30</span><span class="p">})</span>
-<span class="n">df</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>29</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Employees</th>
-      <td>85.112484</td>
-    </tr>
-    <tr>
-      <th>Employees</th>
-      <td>14.887516</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pct_employed&quot;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>pct_employed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Employees</th>
-      <td>85.112484</td>
-    </tr>
-    <tr>
-      <th>Employees</th>
-      <td>14.887516</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>85% of all employed persons in the US work in the private industry.</p>
-
-</div>
-</div>
-</div>
 </div>
  
 
