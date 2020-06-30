@@ -7,7 +7,7 @@ branch: master
 categories: [data, non-profits, civic tech]
 image: images/posts/datajawn/bees.jpg
 badges: false
-hide: true
+hide: false
 nb_path: _notebooks/2020-06-15-non-profits.ipynb
 layout: notebook
 ---
