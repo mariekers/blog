@@ -403,6 +403,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 <h3 id="Better-Data">Better Data<a class="anchor-link" href="#Better-Data"> </a></h3><p>We are recognizing the economic divide in the data created by modern tech.  Tech solutions are built to make <em>money</em>. There's no money to be made from populations with lower socioeconomic status.  This means the user data for those solutions does not represent an entire swath of the population!  If you want to build predictive tooling for an entire population, you need equal amounts of data to <strong>represent the entire population</strong>.</p>
 <h3 id="Better-Services">Better Services<a class="anchor-link" href="#Better-Services"> </a></h3><p>If a non-profit is spending 4 hours every week cleaning and preparing data for direct service claims when they can spend 5 minutes making that extract in a BI tool, imagine what they would then do with the extra 203 hours each year.</p>
 <p>Non-profits can operate with a similar budget!  By automating simple processes, they have more capacity to do the work that makes their jobs rewarding!</p>
+<h3 id="Better-Knowledge">Better Knowledge<a class="anchor-link" href="#Better-Knowledge"> </a></h3><p>Giving programs access to better data collection tools means we will have access to more complete data on issues we are working to resolve (with limited data!).  By encouraging more standardized data collection, we are building capacity for a more complete picture!</p>
 
 </div>
 </div>
