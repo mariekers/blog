@@ -290,8 +290,8 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I was the only "tech" person on the team working on those programs.  My plate was full managing the data requirements of both the program and the grant, so I had no extra bandwidth (and definitely did not have the prowess) to develop a method of storing all of our data in house for free.</p>
-<p>The state employed an IT department, passionate and kind folks who worked to develop and manage solutions in house but who were overwhelmed with the needs of each siloed program.</p>
+<p>I was the only "tech" person on the team working on those programs.  My plate was full managing the data requirements of both the program and the grant, so I had no extra bandwidth (and definitely did not have the prowess) to develop a tool to manage all of our data for free.</p>
+<p>The state employed an IT department, passionate and kind folks who worked to develop and manage external and in-house solutions but who were overwhelmed with the needs of each siloed program.</p>
 <h4 id="What-is-the-cheapest-way-to-improve-access-to-technology?">What is the cheapest way to improve access to technology?<a class="anchor-link" href="#What-is-the-cheapest-way-to-improve-access-to-technology?"> </a></h4>
 </div>
 </div>
@@ -378,7 +378,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is not limited to private industry - tech salaries are consistently higher across all industries!</p>
-<p>Developing a tech solution usually requires more than one</p>
+<p>Developing a tech solution usually requires more than one technologist! If you want to build even a simple app, you need someone to develop it and someone to check the work!</p>
 
 </div>
 </div>
