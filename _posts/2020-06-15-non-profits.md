@@ -290,8 +290,8 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I was the only "tech" person on the team working on those programs.  My plate was full managing the data requirements of both the program and the grant, so I had no extra bandwidth (and definitely did not have the prowess) to develop a method of storing all of our data in house for free.</p>
-<p>The state employed an IT department, passionate and kind folks who worked to develop and manage solutions in house but who were overwhelmed with the needs of each siloed program.</p>
+<p>I was the only "tech" person on the team working on those programs.  My plate was full managing the data requirements of both the program and the grant, so I had no extra bandwidth (and definitely did not have the prowess) to develop a tool to manage all of our data for free.</p>
+<p>The state employed an IT department, passionate and kind folks who worked to develop and manage external and in-house solutions but who were overwhelmed with the needs of each siloed program.</p>
 <h4 id="What-is-the-cheapest-way-to-improve-access-to-technology?">What is the cheapest way to improve access to technology?<a class="anchor-link" href="#What-is-the-cheapest-way-to-improve-access-to-technology?"> </a></h4>
 </div>
 </div>
@@ -378,19 +378,19 @@ Remember that grant budget you put in your application?  Now you have to stick t
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is not limited to private industry - tech salaries are consistently higher across all industries!</p>
-<p>Developing a tech solution usually requires more than one</p>
+<p>Developing a tech solution usually requires more than one technologist! If you want to build even a simple app, you need someone to develop it and someone to check the work!</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="OOTB-Solutions">OOTB Solutions<a class="anchor-link" href="#OOTB-Solutions"> </a></h2><p>In this situation, every state had a program funded by one of our grants and 22 states had a program funded by the other grant. Because the data we were required to report to the CDC (visit level medical information for each participant) was discrete and consistent, a third party company had actually created an Out-of-the-Box SaaS app for data collection.</p>
+<h2 id="OOTB-Solutions">OOTB Solutions<a class="anchor-link" href="#OOTB-Solutions"> </a></h2><p>In the example, every state had a program funded by one of our grants and 22 states had a program funded by the other grant. Because the data we were required to report to the CDC (visit level medical information for each participant) was discrete and consistent, a third party company had actually created an Out-of-the-Box SaaS app for data collection.</p>
 <p>This solution was not free, unfortunately.</p>
 <p>In the first year, we had to pay $150,000 to have the solution set up.  This included data migration from our historical systems to the new system and licensing fees for each program.</p>
 <p>After the initial setup, we had to pay $25,000 for licensing and hosting.  We also had to create a slush fund ($20,000) for ad-hoc development fees.</p>
 <p>That means that the app would cost us $330,000 over 5 years! If all of the grant money is accounted for, how will the program drum up an extra $330,000?</p>
-<h3 id="Customization">Customization<a class="anchor-link" href="#Customization"> </a></h3><p>We were lucky enough to find a solution that was built <em>specifically</em> for our grant.  This keeps customization costs down.  If you are a program that offers both direct services and general services, who collects data both at the time of service and may need to enter data at a later time, if you need to be able to control access to data at system, form, program levels; you will have a lot of customization work.</p>
+<h3 id="Customization">Customization<a class="anchor-link" href="#Customization"> </a></h3><p>We were lucky enough to find a solution that was built <em>specifically</em> for our grants.  This keeps customization costs down.  If you are a program that offers both direct services and general services, who collects data both at the time of service and may need to enter data at a later time, if you need to be able to control access to data at system, form, and program levels; you will have a lot of customization work.</p>
 <p>In this scenario, an OOTB solution may incur more costs than hiring internally. For example, a non-profit looking to use Salesforce but needing specific data fields may incur a lot of customization-related costs just to ensure they are meeting grant requirements!</p>
 
 </div>
@@ -399,10 +399,11 @@ Remember that grant budget you put in your application?  Now you have to stick t
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Take-a-Deep-Breath">Take a Deep Breath<a class="anchor-link" href="#Take-a-Deep-Breath"> </a></h1><p>Why should you care about this?  Working in tech isn't perfect, but it's a stable form of employment that pays very well, is in high demand, and allows a lot of us introverts to just solve problems all day!  It's a great gig.</p>
-<h2 id="The-Tech-Divide">The Tech Divide<a class="anchor-link" href="#The-Tech-Divide"> </a></h2><p>In the interest of keeping this brief, there are several arguments for increasing non-profit and government access to up-to-date technologies.</p>
+<h2 id="The-Tech-Divide">The Tech Divide<a class="anchor-link" href="#The-Tech-Divide"> </a></h2><p>In the interest of keeping this brief, here are two major arguments for increasing non-profit and government access to up-to-date technologies.</p>
 <h3 id="Better-Data">Better Data<a class="anchor-link" href="#Better-Data"> </a></h3><p>We are recognizing the economic divide in the data created by modern tech.  Tech solutions are built to make <em>money</em>. There's no money to be made from populations with lower socioeconomic status.  This means the user data for those solutions does not represent an entire swath of the population!  If you want to build predictive tooling for an entire population, you need equal amounts of data to <strong>represent the entire population</strong>.</p>
 <h3 id="Better-Services">Better Services<a class="anchor-link" href="#Better-Services"> </a></h3><p>If a non-profit is spending 4 hours every week cleaning and preparing data for direct service claims when they can spend 5 minutes making that extract in a BI tool, imagine what they would then do with the extra 203 hours each year.</p>
 <p>Non-profits can operate with a similar budget!  By automating simple processes, they have more capacity to do the work that makes their jobs rewarding!</p>
+<h3 id="Better-Knowledge">Better Knowledge<a class="anchor-link" href="#Better-Knowledge"> </a></h3><p>Giving programs access to better data collection tools means we will have access to more complete data on issues we are working to resolve (with limited data!).  By encouraging more standardized data collection, we are building capacity for a more complete picture!</p>
 
 </div>
 </div>
