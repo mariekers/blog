@@ -2,7 +2,7 @@
 keywords: fastai
 description: "Leveling the playing field"
 title: Non-Profits & Tech
-toc: false
+toc: true
 branch: master
 categories: [data, non-profits, civic tech]
 image: images/posts/datajawn/bees.jpg
@@ -28,6 +28,13 @@ layout: notebook
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is a growing disparity in access to tech, and in turn, access to data.  You have to have a certain income to afford a smart phone and a level of understanding to sign up for tech services, yes.  But I'm particularly interested in the disparity in access to tech <em>across organizations</em>. Large, for-profit hospitals can afford more expensive electronic health records and billing tools than a small non-profit organization that serves the homeless. This disparity means that organizations serving individuals with low socioeconomic status have limited access to tools that can automate repeating processes, build basic reports, send data extracts to partners and funders, and generally spend less time entering and processing data.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the tech world, the folks programming and building the actual product generally don't think about costs (outside of developer time). For companies who make money from the product the technologists are building, success is determined by revenue.</p>
@@ -56,7 +63,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SaaS-Me-If-You-Can">SaaS Me If You Can<a class="anchor-link" href="#SaaS-Me-If-You-Can"> </a></h1><h3 id="Based-on-a-True-Story">Based on a True Story<a class="anchor-link" href="#Based-on-a-True-Story"> </a></h3>
+<h1 id="Identifying-and-Adopting-Tech">Identifying and Adopting Tech<a class="anchor-link" href="#Identifying-and-Adopting-Tech"> </a></h1><h2 id="SaaS-Me-If-You-Can">SaaS Me If You Can<a class="anchor-link" href="#SaaS-Me-If-You-Can"> </a></h2>
 </div>
 </div>
 </div>
@@ -251,7 +258,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Tech-Debt">Tech Debt<a class="anchor-link" href="#Tech-Debt"> </a></h1>
+<h1 id="The-Cost-of-Tech">The Cost of Tech<a class="anchor-link" href="#The-Cost-of-Tech"> </a></h1><h2 id="Tech-Debt">Tech Debt<a class="anchor-link" href="#Tech-Debt"> </a></h2>
 </div>
 </div>
 </div>
@@ -292,13 +299,14 @@ Remember that grant budget you put in your application?  Now you have to stick t
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>I was the only "tech" person on the team working on those programs.  My plate was full managing the data requirements of both the program and the grant, so I had no extra bandwidth (and definitely did not have the prowess) to develop a tool to manage all of our data for free.</p>
 <p>The state employed an IT department, passionate and kind folks who worked to develop and manage external and in-house solutions but who were overwhelmed with the needs of each siloed program.</p>
-<h4 id="What-is-the-cheapest-way-to-improve-access-to-technology?">What is the cheapest way to improve access to technology?<a class="anchor-link" href="#What-is-the-cheapest-way-to-improve-access-to-technology?"> </a></h4>
+<p><em>What is the cheapest way to improve access to technology?</em></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Employing-Technologists">Employing Technologists<a class="anchor-link" href="#Employing-Technologists"> </a></h3><p>Using the same BLS data, I looked at how much it costs to employ a technologist.</p>
+<h2 id="In-House-Team">In-House Team<a class="anchor-link" href="#In-House-Team"> </a></h2><p>Using the same BLS data, I looked at how much it costs to employ a technologist.</p>
 <p>On average, technologists in any industry make significantly more than an average employee in that industry.</p>
 
 </div>
@@ -398,12 +406,12 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Take-a-Deep-Breath">Take a Deep Breath<a class="anchor-link" href="#Take-a-Deep-Breath"> </a></h1><p>Why should you care about this?  Working in tech isn't perfect, but it's a stable form of employment that pays very well, is in high demand, and allows a lot of us introverts to just solve problems all day!  It's a great gig.</p>
-<h2 id="The-Tech-Divide">The Tech Divide<a class="anchor-link" href="#The-Tech-Divide"> </a></h2><p>In the interest of keeping this brief, here are two major arguments for increasing non-profit and government access to up-to-date technologies.</p>
-<h3 id="Better-Data">Better Data<a class="anchor-link" href="#Better-Data"> </a></h3><p>We are recognizing the economic divide in the data created by modern tech.  Tech solutions are built to make <em>money</em>. There's no money to be made from populations with lower socioeconomic status.  This means the user data for those solutions does not represent an entire swath of the population!  If you want to build predictive tooling for an entire population, you need equal amounts of data to <strong>represent the entire population</strong>.</p>
-<h3 id="Better-Services">Better Services<a class="anchor-link" href="#Better-Services"> </a></h3><p>If a non-profit is spending 4 hours every week cleaning and preparing data for direct service claims when they can spend 5 minutes making that extract in a BI tool, imagine what they would then do with the extra 203 hours each year.</p>
+<h1 id="How-Tech-Helps">How Tech Helps<a class="anchor-link" href="#How-Tech-Helps"> </a></h1><p>Why should you care about this?  Working in tech isn't perfect, but it's a stable form of employment that pays very well, is in high demand, and allows a lot of us introverts to just solve problems all day!  It's a great gig.</p>
+<p>In the interest of keeping this brief, here are three arguments for increasing non-profit and government access to up-to-date technologies.</p>
+<h2 id="Better-Data">Better Data<a class="anchor-link" href="#Better-Data"> </a></h2><p>We are recognizing the economic divide in the data created by modern tech.  Tech solutions are built to make <em>money</em>. There's no money to be made from populations with lower socioeconomic status.  This means the user data for those solutions does not represent an entire swath of the population!  If you want to build predictive tooling for an entire population, you need equal amounts of data to <strong>represent the entire population</strong>.</p>
+<h2 id="Better-Services">Better Services<a class="anchor-link" href="#Better-Services"> </a></h2><p>If a non-profit is spending 4 hours every week cleaning and preparing data for direct service claims when they can spend 5 minutes making that extract in a BI tool, imagine what they would then do with the extra 203 hours each year.  Non-profits that offer individual services but use tools like Excel cannot easily see a participant's journey within a program, nonetheless within the organization. Better tech means better service.</p>
 <p>Non-profits can operate with a similar budget!  By automating simple processes, they have more capacity to do the work that makes their jobs rewarding!</p>
-<h3 id="Better-Knowledge">Better Knowledge<a class="anchor-link" href="#Better-Knowledge"> </a></h3><p>Giving programs access to better data collection tools means we will have access to more complete data on issues we are working to resolve (with limited data!).  By encouraging more standardized data collection, we are building capacity for a more complete picture!</p>
+<h2 id="Better-Knowledge">Better Knowledge<a class="anchor-link" href="#Better-Knowledge"> </a></h2><p>Giving programs access to better data collection tools means we will have access to more complete data on issues we are working to resolve (with limited data!).  By encouraging more standardized data collection, we are building capacity for a more complete picture!</p>
 
 </div>
 </div>
@@ -411,10 +419,16 @@ Remember that grant budget you put in your application?  Now you have to stick t
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Contribute-to-Civic-Tech">Contribute to Civic Tech<a class="anchor-link" href="#Contribute-to-Civic-Tech"> </a></h1><p>So what can you do?</p>
-<h2 id="As-a-citizen">As a citizen<a class="anchor-link" href="#As-a-citizen"> </a></h2><p>You may have a local <a href="https://brigade.codeforamerica.org/">Code for America brigade</a>! Reach out to them.  If you don't, start one!</p>
+<p><strong>As a citizen</strong>
+You may have a local <a href="https://brigade.codeforamerica.org/">Code for America brigade</a>! Reach out to them.  If you don't, start one!</p>
 <p>If you're not a technologist, managing a project is absolutely a huge need for these brigades!</p>
-<h2 id="As-a-non-profit">As a non-profit<a class="anchor-link" href="#As-a-non-profit"> </a></h2><p>See above :)</p>
-<h2 id="As-a-tech-company">As a tech company<a class="anchor-link" href="#As-a-tech-company"> </a></h2><p>Encourage developers to work on these projects!  Local companies can donate actual developer time to work on projects - these projects don't happen overnight. Increasing volunteer capacity is just as valuable (and, honestly, more valuable) than a financial donation.</p>
+<p><strong>As a non-profit</strong>
+See above :)</p>
+<p><strong>As a tech company</strong>
+Encourage developers to work on these projects!  Local companies can donate actual developer time to work on projects - these projects don't happen overnight. Increasing volunteer capacity is just as valuable (and, honestly, more valuable) than a financial donation.</p>
+<p>Also, you can do pro bono work yourself!  Are there any non-profits that can benefit from your product?  Can you help them set it up and then offer them access to it for very cheap or free?</p>
+<p><strong>As a decision maker</strong>
+MAKE TECH-SPECIFIC GRANT FUNDING.  STOP SILOING WORK FOR STATE AND CITY LEVEL PROJECTS.</p>
 
 </div>
 </div>
