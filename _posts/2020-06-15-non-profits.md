@@ -39,16 +39,21 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the tech world, the folks programming and building the actual product generally don't think about costs (outside of developer time). For companies who make money from the product the technologists are building, success is determined by revenue.</p>
 <p><img src="https://i.gifer.com/VZav.gif" alt=""></p>
-<p>A thriving charity's first success is being able to afford basic operations.  A non-proft has "made it" when they can say "what else can we pay for". For non-profits and government agencies, there's not a lot of passive (legal) revenue to the organization, so we're gonna cover that choose-your-own-adventure style.</p>
+<p>A thriving charity's first success is being able to afford basic operations.  A non-proft has "made it" when they can say "what else can we pay for".</p>
+<p>We're going to review the cost of different technical solutions non-profits might use, how things like grant structures prohibit them from engaging technology, how that keeps them from doing what they want, and finally what technologists can do to fill the gap and support them.</p>
+<h1 id="How-to-Read-this-Guide">How to Read this Guide<a class="anchor-link" href="#How-to-Read-this-Guide"> </a></h1><p>This post is going to review the cost of different technical solutions non-profits might use, how things like grant structures prohibit them from engaging technology, how that keeps them from doing what they want, and finally what technologists can do to fill the gap and support them.</p>
+<p>For non-profits and government agencies, there's not a lot of passive (legal) revenue to the organization, so we're gonna cover that choose-your-own-adventure style.</p>
+<p>If you are in tech, start here.  If you are a non-profit, I'm going assume you're familiar with funding.  Start <a href="#SaaS-Me-If-You-Can">further down</a>.</p>
 <h1 id="Making-money-the-hard-way">Making money the hard way<a class="anchor-link" href="#Making-money-the-hard-way"> </a></h1><h2 id="A-primer-for-folks-who-haven't-hustled-to-avoid-revenue">A primer for folks who haven't hustled to avoid revenue<a class="anchor-link" href="#A-primer-for-folks-who-haven't-hustled-to-avoid-revenue"> </a></h2><p>Let's start with the assumption that all non-profits need some amount of funding. The most common methods for getting these funds are:</p>
 <ol>
 <li>Donations </li>
 <li>Grants</li>
-<li>Service Provider</li>
+<li>Services</li>
 </ol>
 <h3 id="Donations">Donations<a class="anchor-link" href="#Donations"> </a></h3><p>For the sake of not letting myself ramble, we're going to focus on financial donations. Many non-profits exist on the model of donations of goods (like Goodwill), selling those goods, and then generating operating costs from those goods. It's a financial model.  It exists. The end.</p>
 <p>Non-profit organizations normally accept financial donations, but simply relying on someone to wake up and think "you know what, I'm going to send a check to United Way today" is probably not going to result in a reliable stream of income, if any income at all.  If a non-profit wants a reliable amount of funds from donations, they need a fundraising campaign.  Fundraising campaigns are not free - if Susan G. Komen spends $200,000 buying fancy pink shoes for football players and raises $800,000 (in an imaginary land in which you can directly attribute all financial donations to a single campaign), they're actually raising $600,000.  They spent 25 cents for every dollar raised.  In order to include this money in an annual budget, the non-profit needs to hold regular fundraising campaigns.  This is why most non-profits will employ a Fundraising Coordinator or Marketing Specialist.  If they plan on relying on donations as a revenue stream, they need to efficiently and consistently fundraise.</p>
-<h3 id="Direct-Services">Direct Services<a class="anchor-link" href="#Direct-Services"> </a></h3><p>Some non-profits receive funding for their programs through direct services given to members.  For example, a non-profit that offers Medication Assisted Treatment may submit insurance claims for participants who have received services through the non-profit.  Most insurance companies will have set money amounts for each procedure reported on each claim.</p>
+<h3 id="Services">Services<a class="anchor-link" href="#Services"> </a></h3><p>Some non-profits receive funding for their programs through direct services given to members.  For example, a non-profit that offers Medication Assisted Treatment may submit insurance claims for participants who have received services through the non-profit.  Most insurance companies will have set money amounts for each procedure reported on each claim.</p>
+<p>Services may also come in the form of goods, like yellow silicone bracelets that are $3 beacons of virtue...</p>
 <h3 id="Grants">Grants<a class="anchor-link" href="#Grants"> </a></h3><p>Grants are a sum of money given to an organization for a specific purpose.  Grants come in two basic flavors: a sweet but tangy public grant or an earthy, umami private grant.  In my experience, private grants are a little less stringent with their requirements but here's a basic breakdown of how to receive and use grant funding.</p>
 <p><strong>Step 1: Funding Opportunity Announcement (FOA)</strong>
 Grant agency puts out an FOA (it's the government, did you think there wasn't an acronym?) that specifies what the grant is for, how much you could receive, who is eligible, timeline, and how to apply.  Federal FOA's are almost humorously specific, like this "<a href="https://www.grants.gov/web/grants/search-grants.html">Small Grants Program for Leading English Discussion Groups in Sapporo, Japan</a>"</p>
@@ -63,7 +68,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Identifying-and-Adopting-Tech">Identifying and Adopting Tech<a class="anchor-link" href="#Identifying-and-Adopting-Tech"> </a></h1><h2 id="SaaS-Me-If-You-Can">SaaS Me If You Can<a class="anchor-link" href="#SaaS-Me-If-You-Can"> </a></h2>
+<h1 id="Identifying-and-Adopting-Tech,-An-Example">Identifying and Adopting Tech, An Example<a class="anchor-link" href="#Identifying-and-Adopting-Tech,-An-Example"> </a></h1><h2 id="SaaS-Me-If-You-Can">SaaS Me If You Can<a class="anchor-link" href="#SaaS-Me-If-You-Can"> </a></h2>
 </div>
 </div>
 </div>
