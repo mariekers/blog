@@ -12,4 +12,4 @@ jk this is about what _you_ can do
 4. Be an informed [citizen](https://www.newyorker.com/magazine/2016/11/07/the-case-against-democracy)!
 5. [Register to Vote!](https://www.vote.org/register-to-vote/)
 
-![]({{ site.baseurl }}/images/vote.jpg "yes, that is not a wig"ß)
+![]({{ site.baseurl }}/images/vote.jpg)

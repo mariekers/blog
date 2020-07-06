@@ -2,7 +2,7 @@
 keywords: fastai
 description: "Leveling the playing field"
 title: Non-Profits & Tech
-toc: false
+toc: true
 branch: master
 categories: [data, non-profits, civic tech]
 image: images/posts/datajawn/bees.jpg
@@ -28,6 +28,13 @@ layout: notebook
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is a growing disparity in access to tech, and in turn, access to data.  You have to have a certain income to afford a smart phone and a level of understanding to sign up for tech services, yes.  But I'm particularly interested in the disparity in access to tech <em>across organizations</em>. Large, for-profit hospitals can afford more expensive electronic health records and billing tools than a small non-profit organization that serves the homeless. This disparity means that organizations serving individuals with low socioeconomic status have limited access to tools that can automate repeating processes, build basic reports, send data extracts to partners and funders, and generally spend less time entering and processing data.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the tech world, the folks programming and building the actual product generally don't think about costs (outside of developer time). For companies who make money from the product the technologists are building, success is determined by revenue.</p>
@@ -56,7 +63,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SaaS-Me-If-You-Can">SaaS Me If You Can<a class="anchor-link" href="#SaaS-Me-If-You-Can"> </a></h1><h3 id="Based-on-a-True-Story">Based on a True Story<a class="anchor-link" href="#Based-on-a-True-Story"> </a></h3>
+<h1 id="Identifying-and-Adopting-Tech">Identifying and Adopting Tech<a class="anchor-link" href="#Identifying-and-Adopting-Tech"> </a></h1><h2 id="SaaS-Me-If-You-Can">SaaS Me If You Can<a class="anchor-link" href="#SaaS-Me-If-You-Can"> </a></h2>
 </div>
 </div>
 </div>
@@ -251,7 +258,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Tech-Debt">Tech Debt<a class="anchor-link" href="#Tech-Debt"> </a></h1>
+<h1 id="The-Cost-of-Tech">The Cost of Tech<a class="anchor-link" href="#The-Cost-of-Tech"> </a></h1><h2 id="Tech-Debt">Tech Debt<a class="anchor-link" href="#Tech-Debt"> </a></h2>
 </div>
 </div>
 </div>
