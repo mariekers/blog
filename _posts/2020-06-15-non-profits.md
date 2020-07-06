@@ -79,6 +79,7 @@ Remember that grant budget you put in your application?  Now you have to stick t
 <p>The program I worked for required a 60/40 split when it came to direct services.  This means we had to spend at least 60% of our allotted money on paying for medical services for our participants.  The grant also required that we report very specific data elements from those services.</p>
 <p>Because the grant was federally funded but implemented at the state level, the program was responsible for both salary and benefits for all employees.  The Program was also responsible for paying an administrative fee to the state - for using state resources (internet, office space, legal services, etc).</p>
 <p>For the sake of easy math, let's say the program was granted $1,000,000.</p>
+<p><em>These charts are interactive, so you can click or hover over them for more info.</em></p>
 
 </div>
 </div>
