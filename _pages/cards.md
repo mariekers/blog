@@ -4,7 +4,9 @@ title: Holiday Cards
 permalink: /about/cards
 ---
 
-The perfect intersection of "I get to make a joke", "This will be a 100% unexpected bit of joy for others", and "I get to dress up", presented here.
+
+Since 2013, I have sent a holiday card for a random holiday of my choosing.  
+
 
 ## 2013 
 ### Grey Gardens Flag Day
