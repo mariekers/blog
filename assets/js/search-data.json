@@ -71,6 +71,17 @@
   
 
   
+      ,"page2": {
+          "title": "Holiday Cards",
+          "content": "The perfect intersection of “I get to make a joke”, “This will be a 100% unexpected bit of joy for others”, and “I get to dress up”, presented here. . 2013 . Grey Gardens Flag Day . . 2014 . The Cheapest Labor Day Photoshoot . . 2015 . Eat Lightning and Sh$t Thunder Boxing Day . . 2016 . Dynamite Election Day of Doom . . 2017 . Catfish Black Friday . . 2018 . Cake Smash Bastille Day . . 2019 . All of my ideas were too political…Day . 2020 . Camp Chippewa Thanksgiving . . 2021 . Happy Little Arbor Day . . 2022 . Coming Soon .",
+          "url": "https://skinnamarieke.com/about/cards",
+          "relUrl": "/about/cards",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -92,7 +103,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://skinnamarieke.com/robots.txt",
