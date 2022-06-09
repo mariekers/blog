@@ -17,11 +17,11 @@ The perfect intersection of "I get to make a joke", "This will be a 100% unexpec
 
 ### 2015
 #### Eat Lightning and Sh$t Thunder Boxing Day
-![]({{ site.baseurl }}/images/holiday-cards/boxing-day-2015.jpg)
+![]({{ site.baseurl }}/images/holiday-cards/boxing-day-2015.JPG)
 
 ### 2016
 #### Dynamite Election Day of Doom
-![]({{ site.baseurl }}/images/holiday-cards/election-day-2016.jpg)
+![]({{ site.baseurl }}/images/holiday-cards/election-day-2016.JPG)
 
 ### 2017
 #### Catfish Black Friday 
@@ -29,18 +29,18 @@ The perfect intersection of "I get to make a joke", "This will be a 100% unexpec
 
 ### 2018
 #### Cake Smash Bastille Day
-![]({{ site.baseurl }}/images/holiday-cards/bastille-day-2018.jpg)
+![]({{ site.baseurl }}/images/holiday-cards/bastille-day-2018.JPG)
 
 ### 2019
 #### All of my ideas were too political...Day
 
 ### 2020
 #### Camp Chippewa Thanksgiving
-![]({{ site.baseurl }}/images/holiday-cards/thanksgiving-2020.png)
+![]({{ site.baseurl }}/images/holiday-cards/thanksgiving-2020.PNG)
 
 ### 2021
 #### Happy Little Arbor Day
-![]({{ site.baseurl }}/images/holiday-cards/arbor-day-2021.png)
+![]({{ site.baseurl }}/images/holiday-cards/arbor-day-2021.PNG)
 
 ### 2022
 #### Coming Soon
