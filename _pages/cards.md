@@ -43,8 +43,8 @@ The perfect intersection of "I get to make a joke", "This will be a 100% unexpec
 ![]({{ site.baseurl }}/images/holiday-cards/arbor-day-2021.PNG)
 
 ### 2022
-#### Coming Soon
-<!-- ![]({{ site.baseurl }}/images/holiday-cards/black-friday-2017.jpg) -->
+#### Summer Solstice comes to play
+![]({{ site.baseurl }}/images/holiday-cards/solstice-2022.jpg)
 
 
 
